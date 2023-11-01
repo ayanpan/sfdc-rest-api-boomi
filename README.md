@@ -15,9 +15,17 @@ Suppose if there are 7 separate users created for Boomi integration in a Salesfo
 
 :point_right: Faster Integration Enhancements - When we use Boomi's native/out-of-box Salesforce Connector to perform Salesforce QUERY operation, and have to update the SOQL to incorporate a new Salesforce field, we have to re-import the Salesforce Object in the Boomi's Salesforce Connector's Operation along with verifying the selected fields to avoid any additional fields being selected after the profile re-import. When we use Boomi's HTTP Connector to perform Salesforce QUERY operation, we only have to edit the parameter in the URI.
 
-## Solution Approach 
+## Solution Approach
+:small_orange_diamond: Create a Connected App in Salesforce with the required configuration and access-levels.
+
+:small_orange_diamond: Create a Boomi Process.
+
+:small_orange_diamond: Create an HTTP Client Connector component and set the URL.
+
+:small_orange_diamond: Create the required Operations for HTTP Client Connector component.
 
 ## Create Connected App in Salesforce
+Please refer this Salesforce community article - https://developer.salesforce.com/docs/atlas.en-us.196.0.api_rest.meta/api_rest/intro_defining_remote_access_applications.htm 
 
 ## Create HTTP Client Connector in Boomi
 
