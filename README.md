@@ -4,6 +4,8 @@
 
 ## Limitation of Native Salesforce Connector
 
+## Solution Approach
+
 ## Create Connected App in Salesforce
 
 ## Create HTTP Client Connector in Boomi
