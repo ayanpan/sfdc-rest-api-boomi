@@ -81,7 +81,6 @@ Content Type: application/json
 HTTP Method: GET
 Request Headers: Authorization : <value of DPP_Access_Token>
 ```
-<img width="701" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/d5c1bed4-ee5f-4822-854f-4290e60f0a8a">
 
 :small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to fetch an Account record will be like below.
 ```
@@ -97,41 +96,40 @@ Content Type: application/json
 HTTP Method: POST
 Request Headers: Authorization : <value of DPP_Access_Token>
 ```
-<img width="701" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/d5c1bed4-ee5f-4822-854f-4290e60f0a8a">
 
 :small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to create an Account record will be like below.
 ```
-https://<salesforce_instance_name>.my.salesforce.com/
+https://<salesforce_instance_name>.my.salesforce.com/services/data/v58.0/sobjects/Account
 ```
 
 ## Salesforce UPDATE Operation
 :small_orange_diamond: Configure the HTTP Client Connector's Operation.
 ```
-Select Request Profile Type: NONE
+Select Request Profile Type: JSON
 Select Response Profile Type: JSON
-Content Type: application/x-www-form-urlencoded
+Content Type: application/json
 HTTP Method: POST
+Request Headers: Authorization : <value of DPP_Access_Token>
 ```
-<img width="701" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/d5c1bed4-ee5f-4822-854f-4290e60f0a8a">
 
-:small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to generate the Access Token will be like below.
+:small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to update an Account record will be like below.
 ```
-https://<salesforce_instance_name>.my.salesforce.com/services/oauth2/token
+https://<salesforce_instance_name>.my.salesforce.com/services/data/v58.0/sobjects/Account/<salesforce_record_id>?_HttpMethod=PATCH
 ```
 
 ## Salesforce UPSERT Operation
 :small_orange_diamond: Configure the HTTP Client Connector's Operation.
 ```
-Select Request Profile Type: NONE
+Select Request Profile Type: JSON
 Select Response Profile Type: JSON
-Content Type: application/x-www-form-urlencoded
+Content Type: application/json
 HTTP Method: POST
+Request Headers: Authorization : <value of DPP_Access_Token>
 ```
-<img width="701" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/d5c1bed4-ee5f-4822-854f-4290e60f0a8a">
 
-:small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to generate the Access Token will be like below.
+:small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to upsert an Account record will be like below.
 ```
-https://<salesforce_instance_name>.my.salesforce.com/services/oauth2/token
+https://<salesforce_instance_name>.my.salesforce.com/services/data/v58.0/sobjects/Account/<salesforce_external_id_field_name>/<salesforce_external_id_value>?_HttpMethod=PATCH
 ```
 
 ## List of Abbreviations
