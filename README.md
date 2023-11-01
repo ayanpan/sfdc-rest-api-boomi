@@ -11,9 +11,10 @@ Suppose if there are 7 separate users created for Boomi integration in a Salesfo
 
 :small_orange_diamond: Better Security - We can use OAuth 2.0 as the authentication and authorization mechanism for enhanced security.
 
-:small_orange_diamond: Faster Connectvity - Boomi's native/out-of-box Salesforce Connector conncts with the SOAP API of Salesforce, which can be slower at times, as compared to the REST API of Salesforce.
+:small_orange_diamond: Faster Connectivity - Boomi's native/out-of-box Salesforce Connector connects with the SOAP API of Salesforce, which can be slower at times, as compared to the REST API of Salesforce.
 
-:small_orange_diamond: Faster Integration Enhancements - When we use Boomi's native/out-of-box Salesforce Connector to perform Salesforce QUERY operation, and have to update the SOQL to incorporate a new Salesforce field, we have to re-import the Salesforce Object in the Boomi's Salesforce Connector's Operation along with verifying the selected fields to avoid any additional fields being selected after the profile re-import. When we use Boomi's HTTP Connector to perform Salesforce QUERY operation, we only have to edit the parameter in the URI.
+:small_orange_diamond: Faster Integration Enhancements - When we use Boomi's native/out-of-box Salesforce Connector to perform Salesforce QUERY operation, and have to update the SOQL to incorporate a new Salesforce field, we have to re-import the Salesforce Object in the Boomi's Salesforce Connector's Operation along with verifying the selected fields to avoid any additional fields being selected after the profile re-import. When we use Boomi's HTTP Connector to perform a Salesforce QUERY operation, we only have to edit the parameter in the URL Resource Path.
+
 
 ## Solution Approach
 :small_orange_diamond: Create a Connected App in Salesforce with the required configuration and access-levels.
