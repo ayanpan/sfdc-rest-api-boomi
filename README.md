@@ -46,6 +46,26 @@ grant_type=password&client_id={1}&client_secret={2}&username={3}&password={4}
 ```
 <img width="539" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/24ce8a79-dc30-4568-8ae2-280b2732f67a">
 
+:small_orange_diamond: Set the HTTP Operation's Resource Path in a DDP, in the Set Properties shape.
+```
+DDP_Token_RPath: services/oauth2/token
+```
+
+<img width="539" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/86922642-b638-471a-b822-7b83230467a6">
+
+:small_orange_diamond: Configure the HTTP Client Connector's Operation.
+```
+Select Request Profile Type: NONE
+Select Response Profile Type:	JSON
+Content Type: application/x-www-form-urlencoded
+HTTP Method: POST
+```
+<img width="701" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/d5c1bed4-ee5f-4822-854f-4290e60f0a8a">
+
+:small_orange_diamond: Store the value of Access Token in a DPP.
+```
+DPP_Access_Token: Bearer <value_of_access_token_recieved_from_salesforce>
+```
 
 ## Salesforce QUERY Operation
 
@@ -64,3 +84,5 @@ grant_type=password&client_id={1}&client_secret={2}&username={3}&password={4}
 | OAuth | open authorization  |
 | SOAP  | Simple Object Access Protocol |
 | URL  | Uniform Resource Locator  |
+| DDP  | Dynamic Document Property  |
+| DPP  | Dynamic Process Property  |
