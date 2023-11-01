@@ -31,6 +31,7 @@ Please refer this Salesforce community article - https://developer.salesforce.co
 
 ## Create HTTP Client Connector in Boomi
 Enter the Base-URL.
+
 <img width="597" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/1a95a1b2-bfee-4f32-9b0f-042ee9fed3c4">
 
 ## Generate Salesforce Access Token
