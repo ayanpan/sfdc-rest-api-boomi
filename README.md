@@ -30,7 +30,12 @@ Suppose if there are 7 separate users created for Boomi integration in a Salesfo
 Please refer this Salesforce community article - https://developer.salesforce.com/docs/atlas.en-us.196.0.api_rest.meta/api_rest/intro_defining_remote_access_applications.htm 
 
 ## Create HTTP Client Connector in Boomi
-Enter the Base-URL.
+:small_orange_diamond: URL: Enter the Base-URL.
+```
+https://<salesforce_instance_name>.my.salesforce.com
+```
+
+:small_orange_diamond: Authentication Type: None
 
 <img width="597" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/1a95a1b2-bfee-4f32-9b0f-042ee9fed3c4">
 
