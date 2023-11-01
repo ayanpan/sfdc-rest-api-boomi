@@ -56,11 +56,16 @@ DDP_Token_RPath: services/oauth2/token
 :small_orange_diamond: Configure the HTTP Client Connector's Operation.
 ```
 Select Request Profile Type: NONE
-Select Response Profile Type:	JSON
+Select Response Profile Type: JSON
 Content Type: application/x-www-form-urlencoded
 HTTP Method: POST
 ```
 <img width="701" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/d5c1bed4-ee5f-4822-854f-4290e60f0a8a">
+
+:small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to generate the Access Token will be like below.
+```
+https://<salesforce_instance_name>.my.salesforce.com/services/oauth2/token
+```
 
 :small_orange_diamond: Store the value of Access Token in a DPP.
 ```
@@ -68,12 +73,66 @@ DPP_Access_Token: Bearer <value_of_access_token_recieved_from_salesforce>
 ```
 
 ## Salesforce QUERY Operation
+:small_orange_diamond: Configure the HTTP Client Connector's Operation.
+```
+Select Request Profile Type: NONE
+Select Response Profile Type: JSON
+Content Type: application/json
+HTTP Method: GET
+Request Headers: Authorization : <value of DPP_Access_Token>
+```
+<img width="701" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/d5c1bed4-ee5f-4822-854f-4290e60f0a8a">
+
+:small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to fetch an Account record will be like below.
+```
+https://<salesforce_instance_name>.my.salesforce.com/data/v58.0/query/?q=SELECT+Id,+Name,+Phone+FROM+Account+WHERE+Id=%27<salesforce_record_id>%27
+```
 
 ## Salesforce CREATE Operation
+:small_orange_diamond: Configure the HTTP Client Connector's Operation.
+```
+Select Request Profile Type: JSON
+Select Response Profile Type: JSON
+Content Type: application/json
+HTTP Method: POST
+Request Headers: Authorization : <value of DPP_Access_Token>
+```
+<img width="701" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/d5c1bed4-ee5f-4822-854f-4290e60f0a8a">
+
+:small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to create an Account record will be like below.
+```
+https://<salesforce_instance_name>.my.salesforce.com/
+```
 
 ## Salesforce UPDATE Operation
+:small_orange_diamond: Configure the HTTP Client Connector's Operation.
+```
+Select Request Profile Type: NONE
+Select Response Profile Type: JSON
+Content Type: application/x-www-form-urlencoded
+HTTP Method: POST
+```
+<img width="701" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/d5c1bed4-ee5f-4822-854f-4290e60f0a8a">
+
+:small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to generate the Access Token will be like below.
+```
+https://<salesforce_instance_name>.my.salesforce.com/services/oauth2/token
+```
 
 ## Salesforce UPSERT Operation
+:small_orange_diamond: Configure the HTTP Client Connector's Operation.
+```
+Select Request Profile Type: NONE
+Select Response Profile Type: JSON
+Content Type: application/x-www-form-urlencoded
+HTTP Method: POST
+```
+<img width="701" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/d5c1bed4-ee5f-4822-854f-4290e60f0a8a">
+
+:small_orange_diamond: The HTTP Client Connector's URL sent to Salesforce from Boomi to generate the Access Token will be like below.
+```
+https://<salesforce_instance_name>.my.salesforce.com/services/oauth2/token
+```
 
 ## List of Abbreviations
 | Abbreviation  | Definition |
