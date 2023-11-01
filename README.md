@@ -30,14 +30,14 @@ Suppose if there are 7 separate users created for Boomi integration in a Salesfo
 Please refer this Salesforce community article - https://developer.salesforce.com/docs/atlas.en-us.196.0.api_rest.meta/api_rest/intro_defining_remote_access_applications.htm 
 
 ## Create HTTP Client Connector in Boomi
-:small_orange_diamond: Create the payload based on application/x-www-form-urlencoded Content-Type.
-```
-grant_type=password&client_id={1}&client_secret={2}&username={3}&password={4}
-```
+Enter the Base-URL.
 <img width="597" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/1a95a1b2-bfee-4f32-9b0f-042ee9fed3c4">
 
 ## Generate Salesforce Access Token
-:small_orange_diamond: Generate request payload in a Message shape.
+:small_orange_diamond: Create the payload in a Message shape, based on **application/x-www-form-urlencoded** Content-Type.
+```
+grant_type=password&client_id={1}&client_secret={2}&username={3}&password={4}
+```
 <img width="539" alt="image" src="https://github.com/ayanpan/sfdc-rest-api-boomi/assets/12267939/24ce8a79-dc30-4568-8ae2-280b2732f67a">
 
 
@@ -48,3 +48,19 @@ grant_type=password&client_id={1}&client_secret={2}&username={3}&password={4}
 ## Salesforce UPDATE Operation
 
 ## Salesforce UPSERT Operation
+
+## List of Abbreviations
+| Abbreviation  | Definition |
+| ------------- | ------------- |
+| REST  | Representational State Transfer  |
+| API  | Application Programming Interface  |
+| HTTP  | Hypertext Transfer Protocol  |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
