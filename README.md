@@ -61,12 +61,6 @@ grant_type=password&client_id={1}&client_secret={2}&username={3}&password={4}
 | REST  | Representational State Transfer  |
 | API  | Application Programming Interface  |
 | HTTP  | Hypertext Transfer Protocol  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| OAuth | open authorization  |
+| SOAP  | Simple Object Access Protocol |
+| URL  | Uniform Resource Locator  |
