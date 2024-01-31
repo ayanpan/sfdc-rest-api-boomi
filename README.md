@@ -4,7 +4,7 @@
 There can be several teams in an organization who need to connect to a Salesforce organization to get/send data. Salesforce Architects usually recommend having separate users for separate projects so that the various access levels and roles can be segregated from a security standpoint.
 
 ## Limitation of Native Salesforce Connector
-Suppose if there are 7 separate users created for Boomi integration in a Salesforce organization, and we decide to use Boomi's native/out-of-box Salesforce Connector, it will cost 7 licenses and the operational cost of Boomi would increase.
+Suppose if there are 7 separate users created for Boomi integration in a Salesforce organization, and we decide to use Boomi's native/out-of-box Salesforce Connector, it will cost 7 licenses, thereby increasing the operational cost of Boomi usage.
 
 ## Benefits of using Salesforce REST API in Boomi Integrations
 :small_orange_diamond: Reduced Boomi License Cost - Since a single HTTP Connector in Boomi can be used by parameterizing the credentials of different integration users.
